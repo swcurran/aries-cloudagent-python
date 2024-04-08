@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../Endorser/">
-      
-      
-        <link rel="next" href="../SelectiveDisclosureJWTs/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/hyperledger/aries-cloudagent-python/main/docs/assets/aries-favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Using W3C JSON-LD Signed Credentials - Hyperledger Aries ACA-Py Docs</title>
+        <title>Qualified DIDs In ACA-Py - Hyperledger Aries ACA-Py Docs</title>
       
     
     
@@ -72,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#json-ld-credentials-in-aca-py" class="md-skip">
+        <a href="#qualified-dids-in-aca-py" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using W3C JSON-LD Signed Credentials
+              Qualified DIDs In ACA-Py
             
           </span>
         </div>
@@ -228,12 +224,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../DevReadMe/" class="md-tabs__link">
           
   
@@ -499,28 +493,25 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -531,7 +522,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Features
@@ -773,30 +764,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Using W3C JSON-LD Signed Credentials
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../JsonLdCredentials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -805,146 +776,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Table of Contents
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-concept" class="md-nav__link">
-    <span class="md-ellipsis">
-      General Concept
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General Concept">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bbs" class="md-nav__link">
-    <span class="md-ellipsis">
-      BBS+
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparing-to-issue-a-credential" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparing to Issue a Credential
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparing to Issue a Credential">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-ld-context" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON-LD Context
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signature-suite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Signature Suite
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#did-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      DID Method
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Issuing Credentials
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieving-issued-credentials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieving Issued Credentials
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#present-proof" class="md-nav__link">
-    <span class="md-ellipsis">
-      Present Proof
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vc-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      VC-API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#external-suite-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      External Suite Provider
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2290,120 +2121,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
+      Context
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-concept" class="md-nav__link">
+  <a href="#did-exchange" class="md-nav__link">
     <span class="md-ellipsis">
-      General Concept
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General Concept">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bbs" class="md-nav__link">
-    <span class="md-ellipsis">
-      BBS+
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparing-to-issue-a-credential" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparing to Issue a Credential
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparing to Issue a Credential">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-ld-context" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON-LD Context
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signature-suite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Signature Suite
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#did-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      DID Method
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Issuing Credentials
+      DID Exchange
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#retrieving-issued-credentials" class="md-nav__link">
+  <a href="#did-rotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving Issued Credentials
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#present-proof" class="md-nav__link">
-    <span class="md-ellipsis">
-      Present Proof
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vc-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      VC-API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#external-suite-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      External Suite Provider
+      DID Rotation
     </span>
   </a>
   
@@ -2427,208 +2165,55 @@
   
 
 
-<h1 id="json-ld-credentials-in-aca-py">JSON-LD Credentials in ACA-Py <!-- omit in toc --><a class="headerlink" href="#json-ld-credentials-in-aca-py" title="Permanent link">&para;</a></h1>
-<p>By design Hyperledger Aries is credential format agnostic. This means you can use it for any credential format, as long as an RFC is defined for the specific credential format. ACA-Py currently supports two types of credentials, Indy and JSON-LD credentials. This document describes how to use the latter by making use of <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials</a> using <a href="https://w3c-ccg.github.io/ld-proofs">Linked Data Proofs</a>.</p>
-<h2 id="table-of-contents">Table of Contents <!-- omit in toc --><a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<h1 id="qualified-dids-in-aca-py">Qualified DIDs In ACA-Py<a class="headerlink" href="#qualified-dids-in-aca-py" title="Permanent link">&para;</a></h1>
+<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
+<p>In the past, ACA-Py has used "unqualified" DIDs by convention established early on in the Aries ecosystem, before the concept of Peer DIDs, or DIDs that existed only between peers and were not (necessarily) published to a distributed ledger, fully matured. These "unqualified" DIDs were effectively Indy Nyms that had not been published to an Indy network. Key material and service endpoints were communicated by embedding the DID Document for the "DID" in DID Exchange request and response messages.</p>
+<p>For those familiar with the DID Core Specification, it is a stretch to refer to these unqualified DIDs as DIDs. Usage of these DIDs will be phased out, as dictated by <a href="https://github.com/hyperledger/aries-rfcs/blob/50d148b812c45af3fc847c1e7033b084683dceb7/features/0793-unqualfied-dids-transition/README.md">Aries RFC 0793: Unqualified DID Transition</a>. These DIDs will be phased out in favor of the <code>did:peer</code> DID Method. ACA-Py's support for this method and it's use in DID Exchange and DID Rotation is dictated below.</p>
+<h2 id="did-exchange">DID Exchange<a class="headerlink" href="#did-exchange" title="Permanent link">&para;</a></h2>
+<p>When using DID Exchange as initiated by an Out-of-Band invitation:</p>
 <ul>
-<li><a href="#general-concept">General Concept</a></li>
-<li><a href="#bbs">BBS+</a></li>
-<li><a href="#preparing-to-issue-a-credential">Preparing to Issue a Credential</a></li>
-<li><a href="#json-ld-context">JSON-LD Context</a><ul>
-<li><a href="#writing-json-ld-contexts">Writing JSON-LD Contexts</a></li>
+<li><code>POST /out-of-band/create-invitation</code> accepts two parameters (in addition to others):</li>
+<li><code>use_did_method</code>: a DID Method (options: <code>did:peer:2</code> <code>did:peer:4</code>) indicating that a DID of that type is created (if necessary), and used in the invitation. If a DID of the type has to be created, it is flagged as the "invitation" DID and used in all future invitations so that connection reuse is the default behaviour.<ul>
+<li>This is the recommend approach, and we further recommend using <code>did:peer:4</code>.</li>
 </ul>
 </li>
-<li><a href="#signature-suite">Signature Suite</a></li>
-<li><a href="#did-method">Did Method</a><ul>
-<li><a href="#didsov"><code>did:sov</code></a></li>
-<li><a href="#didkey"><code>did:key</code></a></li>
+<li><code>use_did</code>: a complete DID, which will be used for the invitation being established.  This supports the edge case of an entity wanting to use a new DID for every invitation. It is the responsibility of the controller to create the DID before passing it in.</li>
+<li>If not provided, the 0.11.0 behaviour of an unqualified DID is used.<ul>
+<li>We expect this behaviour will change in a later release to be that <code>use_did_method="did:peer:4"</code> is the default, which is created and (re)used.</li>
 </ul>
 </li>
-<li><a href="#issuing-credentials">Issuing Credentials</a></li>
-<li><a href="#retrieving-issued-credentials">Retrieving Issued Credentials</a></li>
-<li><a href="#present-proof">Present Proof</a></li>
-<li><a href="#vc-api">VC-API</a></li>
+<li>The provided handshake protocol list must also include <code>didexchange/1.1</code>. Optionally, <code>didexchage/1.0</code> may also be provided, thus enabling backwards compatibility with agents that do not yet support <code>didexchage/1.0</code> and use of unqualified DIDs.</li>
 </ul>
-<h2 id="general-concept">General Concept<a class="headerlink" href="#general-concept" title="Permanent link">&para;</a></h2>
-<p>The rest of this guide assumes some basic understanding of W3C Verifiable Credentials, JSON-LD and Linked Data Proofs. If you're not familiar with some of these concepts, the following resources can help you get started:</p>
+<p>When receiving an OOB invitation or creating a DID Exchange request to a known Public DID:</p>
 <ul>
-<li><a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model</a></li>
-<li><a href="https://json-ld.org/learn.html">JSON-LD Articles and Presentations</a></li>
-<li><a href="https://w3c-ccg.github.io/ld-proofs">Linked Data Proofs</a></li>
+<li><code>POST /didexchange/create-request</code> and <code>POST /didexchange/{conn_id}/accept-invitation</code> accepts two parameters (in addition to others):</li>
+<li><code>use_did_method</code>: a DID Method (options: <code>did:peer:2</code> <code>did:peer:4</code>) indicating that a DID of that type should be created and used for the connection.<ul>
+<li>This is the recommend approach, and we further recommend using <code>did:peer:4</code>.</li>
 </ul>
-<h3 id="bbs">BBS+<a class="headerlink" href="#bbs" title="Permanent link">&para;</a></h3>
-<p>BBS+ credentials offer a lot of privacy preserving features over non-ZKP credentials. Therefore we recommend to always use BBS+ credentials over non-ZKP credentials. To get started with BBS+ credentials it is recommended to at least read <a href="https://github.com/hyperledger/aries-rfcs/blob/master/features/0646-bbs-credentials/README.md">RFC 0646: W3C Credential Exchange using BBS+ Signatures</a> for a general overview.</p>
-<p>Some other resources that can help you get started with BBS+ credentials:</p>
+</li>
+<li><code>use_did</code>: a complete DID, which will be used for the connection being established. This supports the edge case of an entity wanting to use the same DID for more than one connection. It is the responsibility of the controller to create the DID before passing it in.</li>
+<li>If neither option is provided, the 0.11.0 behaviour of an unqualified DID is created if DID Exchange 1.0 is used, and a DID Peer 4 is used if DID Exchange 1.1 is used.<ul>
+<li>We expect this behaviour will change in a later release to be that a <code>did:peer:4</code> is created and DID Exchange 1.1 is always used.</li>
+</ul>
+</li>
+<li>When <code>auto-accept</code> is used with DID Exchange, then an unqualified DID is created if DID Exchange 1.0 is being used, and a DID Peer 4 is used if DID Exchange 1.1 is used.</li>
+</ul>
+<p>With these changes, an existing ACA-Py installation using unqualified DIDs can upgrade to use qualified DIDs:</p>
 <ul>
-<li><a href="https://w3c-ccg.github.io/ldp-bbs2020">BBS+ Signatures 2020</a></li>
-<li><a href="https://www.youtube.com/watch?v=LC0OXAir3Qw">Video: BBS+ Credential Exchange in Hyperledger Aries</a></li>
+<li>Reactively in 0.12.0, by using like DIDs from the other agent.</li>
+<li>Proactively, by adding the <code>use_did</code> or <code>use_did_method</code> parameter on the <code>POST /out-of-band/create-invitation</code>, <code>POST /didexchange/create-request</code>. and <code>POST /didexchange/{conn_id}/accept_invitation</code> endpoints and specifying <code>did:peer:2</code> or <code>did_peer:4</code>.</li>
+<li>The other agent must be able to process the selected DID Method.</li>
+<li>Proactively, by updating to use DID Exchange v1.1 and having the other side <code>auto-accept</code> the connection.</li>
 </ul>
-<h2 id="preparing-to-issue-a-credential">Preparing to Issue a Credential<a class="headerlink" href="#preparing-to-issue-a-credential" title="Permanent link">&para;</a></h2>
-<p>Contrary to Indy credentials, JSON-LD credentials do not need a schema or credential definition to issue credentials. Everything required to issue the credential is embedded into the credential itself using Linked Data Contexts.</p>
-<h3 id="json-ld-context">JSON-LD Context<a class="headerlink" href="#json-ld-context" title="Permanent link">&para;</a></h3>
-<p>It is required that every property key in the document can be mapped to an IRI. This means the property key must either be an IRI by default, or have the shorthand property mapped in the <code>@context</code> of the document. If you have properties that are not mapped to IRIs, the Issue Credential API will throw the following error:</p>
-<blockquote>
-<p><code>&lt;x&gt; attributes dropped. Provide definitions in context to correct. [&lt;missing-properties&gt;]</code></p>
-</blockquote>
-<p>For credentials the <code>https://www.w3.org/2018/credentials/v1</code> context MUST always be the first context. In addition, when issuing BBS+ credentials the <code>https://w3id.org/security/bbs/v1</code> URL MUST be present in the context. For convenience this URL will be automatically added to the <code>@context</code> of the credential if not present.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="s2">&quot;https://other-contexts.com&quot;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
-</code></pre></div>
-<h4 id="writing-json-ld-contexts">Writing JSON-LD Contexts<a class="headerlink" href="#writing-json-ld-contexts" title="Permanent link">&para;</a></h4>
-<p>Writing JSON-LD contexts can be a daunting task and is out of scope of this guide. Generally you should try to make use of already existing vocabularies. Some examples are the vocabularies defined in the W3C Credentials Community Group:</p>
+<h2 id="did-rotation">DID Rotation<a class="headerlink" href="#did-rotation" title="Permanent link">&para;</a></h2>
+<p>As part of the transition to qualified DIDs, existing connections may be updated to qualified DIDs using the DID Rotate protocol. This is not strictly required; since DIDComm v1 depends on recipient keys for correlating a received message back to a connection, the DID itself is mostly ignored. However, as we transition to DIDComm v2 or if it is desired to update the keys associated with a connection, DID Rotate may be used to update keys and service endpoints.</p>
+<p>The steps to do so are:</p>
 <ul>
-<li><a href="https://w3c-ccg.github.io/vaccination-vocab/">Vaccination Certificate Vocabulary</a></li>
-<li><a href="https://w3c-ccg.github.io/citizenship-vocab/">Citizenship Vocabulary</a></li>
-<li><a href="https://w3c-ccg.github.io/traceability-vocab/">Traceability Vocabulary</a></li>
+<li>The rotating party creates a new DID using <code>POST /wallet/did/create</code> (or through the endpoints provided by a plugged in DID Method, if relevant).</li>
+<li>For example, the rotating party will likely create a new <code>did:peer:4</code>.</li>
+<li>The rotating party initiates the rotation with <code>POST /did-rotate/{conn_id}/rotate</code> providing the created DID as the <code>to_did</code> in the body of the Admin API request.</li>
+<li>If the receiving party supports DID rotation, a <code>did_rotate</code> webhook will be emitted indicating success.</li>
 </ul>
-<p>Verifiable credentials are not around that long, so there aren't that many vocabularies ready to use. If you can't use one of the existing vocabularies it is still beneficial to lean on already defined lower level contexts. <a href="http://schema.org">http://schema.org</a> has a large registry of definitions that can be used to build new contexts. The example vocabularies linked above all make use of types from <a href="http://schema.org">http://schema.org</a>.</p>
-<p>For the remainder of this guide, we will be using the example <code>UniversityDegreeCredential</code> type and <code>https://www.w3.org/2018/credentials/examples/v1</code> context from the Verifiable Credential Data Model. You should not use this for production use cases.</p>
-<h3 id="signature-suite">Signature Suite<a class="headerlink" href="#signature-suite" title="Permanent link">&para;</a></h3>
-<p>Before issuing a credential you must determine a signature suite to use. ACA-Py currently supports three signature suites for issuing credentials:</p>
-<ul>
-<li><a href="https://w3c-ccg.github.io/lds-ed25519-2018/"><code>Ed25519Signature2018</code></a> - Very well supported. No zero knowledge proofs or selective disclosure.</li>
-<li><a href="https://w3c.github.io/vc-di-eddsa/#ed25519signature2020-0"><code>Ed25519Signature2020</code></a> - Updated version of 2018 suite.</li>
-<li><a href="https://w3c-ccg.github.io/ldp-bbs2020/"><code>BbsBlsSignature2020</code></a> - Newer, but supports zero knowledge proofs and selective disclosure.</li>
-</ul>
-<p>Generally you should always use <code>BbsBlsSignature2020</code> as it allows the holder to derive a new credential during the proving, meaning it doesn't have to disclose all fields and doesn't have to reveal the signature.</p>
-<h3 id="did-method">DID Method<a class="headerlink" href="#did-method" title="Permanent link">&para;</a></h3>
-<p>Besides the JSON-LD context, we need a DID to use for issuing the credential. ACA-Py currently supports two did methods for issuing credentials:</p>
-<ul>
-<li><code>did:sov</code> - Can only be used for <code>Ed25519Signature2018</code> signature suite.</li>
-<li><code>did:key</code> - Can be used for both <code>Ed25519Signature2018</code> and <code>BbsBlsSignature2020</code> signature suites.</li>
-</ul>
-<h4 id="didsov"><code>did:sov</code><a class="headerlink" href="#didsov" title="Permanent link">&para;</a></h4>
-<p>When using <code>did:sov</code> you need to make sure to use a public did so other agents can resolve the did. It is also important the other agent is using the same indy ledger for resolving the did. You can get the public did using the <code>/wallet/did/public</code> endpoint. For backwards compatibility the did is returned without <code>did:sov</code> prefix. When using the did for issuance make sure this prepend this to the did. (so <code>DViYrCMPWfuLiY7LLs8giB</code> becomes <code>did:sov:DViYrCMPWfuLiY7LLs8giB</code>)</p>
-<h4 id="didkey"><code>did:key</code><a class="headerlink" href="#didkey" title="Permanent link">&para;</a></h4>
-<p>A <code>did:key</code> did is not anchored to a ledger, but embeds the key directly in the identifier part of the did. See the <a href="https://w3c-ccg.github.io/did-method-key/">did:key Method Specification</a> for more information.</p>
-<p>You can create a <code>did:key</code> using the <code>/wallet/did/create</code> endpoint with the following body. Use <code>ed25519</code> for <code>Ed25519Signature2018</code>, <code>bls12381g2</code> for <code>BbsBlsSignature2020</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;method&quot;: &quot;key&quot;,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &quot;options&quot;: {
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;key_type&quot;: &quot;bls12381g2&quot; // or ed25519
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  }
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>}
-</code></pre></div>
-<p>The above call will return a did that looks something like this: <code>did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj</code></p>
-<h2 id="issuing-credentials">Issuing Credentials<a class="headerlink" href="#issuing-credentials" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Issuing JSON-LD credentials is only possible with the issue credential v2 protocol (<code>/issue-credential-2.0</code>)</p>
-</blockquote>
-<p>The format used for exchanging JSON-LD credentials is defined in <a href="https://github.com/hyperledger/aries-rfcs/tree/master/features/0593-json-ld-cred-attach/README.md">RFC 0593: JSON-LD Credential Attachment format</a>. The API in ACA-Py exactly matches the formats as described in this RFC, with the most important (from the ACA-Py API perspective) being <a href="https://github.com/hyperledger/aries-rfcs/blob/master/features/0593-json-ld-cred-attach/README.md#ld-proof-vc-detail-attachment-format"><code>aries/ld-proof-vc-detail@v1.0</code></a>. Read the RFC to see the exact properties required to construct a valid Linked Data Proof VC Detail.</p>
-<p>All endpoints in API use the <code>aries/ld-proof-vc-detail@v1.0</code>. We'll use the <code>/issue-credential-2.0/send</code> as an example, but it works the same for the other endpoints. In contrary to issuing indy credentials, JSON-LD credentials do not require a credential preview. All properties should be directly embedded in the credentials.</p>
-<p>The detail should be included under the <code>filter.ld_proof</code> property. To issue a credential call the <code>/issue-credential-2.0/send</code> endpoint, with the example body below and the <code>connection_id</code> and <code>issuer</code> keys replaced. The value of <code>issuer</code> should be the did that you created in the <a href="#did-method">Did Method</a> paragraph above.</p>
-<p>If you don't have <code>auto-respond-credential-offer</code> and <code>auto-store-credential</code> enabled in the ACA-Py config, you will need to call <code>/issue-credential-2.0/records/{cred_ex_id}/send-request</code> and <code>/issue-credential-2.0/records/{cred_ex_id}/store</code> to finalize the credential issuance.</p>
-<details>
-<summary>See the example body</summary>
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  &quot;connection_id&quot;: &quot;ddc23de9-359f-465c-b66e-f7c5a0cc9a57&quot;,
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  &quot;filter&quot;: {
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    &quot;ld_proof&quot;: {
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      &quot;credential&quot;: {
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        &quot;@context&quot;: [
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>          &quot;https://www.w3.org/2018/credentials/v1&quot;,
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>          &quot;https://www.w3.org/2018/credentials/examples/v1&quot;
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        ],
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        &quot;type&quot;: [&quot;VerifiableCredential&quot;, &quot;UniversityDegreeCredential&quot;],
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        &quot;issuer&quot;: &quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;,
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        &quot;issuanceDate&quot;: &quot;2020-01-01T12:00:00Z&quot;,
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        &quot;credentialSubject&quot;: {
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>          &quot;degree&quot;: {
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            &quot;type&quot;: &quot;BachelorDegree&quot;,
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>            &quot;name&quot;: &quot;Bachelor of Science and Arts&quot;
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>          },
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>          &quot;college&quot;: &quot;Faber College&quot;
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        }
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>      },
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>      &quot;options&quot;: {
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        &quot;proofType&quot;: &quot;BbsBlsSignature2020&quot;
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>      }
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    }
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>  }
-<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>}
-</code></pre></div>
-
-</details>
-
-<h2 id="retrieving-issued-credentials">Retrieving Issued Credentials<a class="headerlink" href="#retrieving-issued-credentials" title="Permanent link">&para;</a></h2>
-<p>After issuing the credential, the credentials should be stored inside the wallet. Because the structure of JSON-LD credentials is so different from indy credentials a new endpoint is added to retrieve W3C credentials.</p>
-<p>Call the <code>/credentials/w3c</code> endpoint to retrieve all JSON-LD credentials in your wallet. See the detail below for an example response based on the issued credential from the <a href="#issuing-credentials">Issuing Credentials</a> paragraph above.</p>
-<details>
-
-<summary>See the example response</summary>
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">&quot;contexts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="s2">&quot;https://www.w3.org/2018/credentials/examples/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="s2">&quot;https://w3id.org/security/bbs/v1&quot;</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p">],</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">&quot;types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;UniversityDegreeCredential&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">&quot;schema_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nt">&quot;issuer_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nt">&quot;subject_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="nt">&quot;proof_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;BbsBlsSignature2020&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="nt">&quot;cred_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">          </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">          </span><span class="s2">&quot;https://www.w3.org/2018/credentials/examples/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">          </span><span class="s2">&quot;https://w3id.org/security/bbs/v1&quot;</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="p">],</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;UniversityDegreeCredential&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">        </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">        </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-01-01T12:00:00Z&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span><span class="nt">&quot;degree&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BachelorDegree&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bachelor of Science and Arts&quot;</span>
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">          </span><span class="p">},</span>
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">          </span><span class="nt">&quot;college&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Faber College&quot;</span>
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="nt">&quot;proof&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BbsBlsSignature2020&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">          </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">          </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj#zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">          </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-05-03T12:31:28.561945&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">          </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;iUFtRGdLLCWxKx8VD3oiFBoRMUFKhSitTzMsfImXm6OF0d8il+Z40aLz8S7m8EcXPQhRjcWWL9jkfcf1SDifD4CvxVg69NvB7hZyIIz9hwAyi3LmTm0ez4NDRCKyieBuzqKbfM2eACWn/ilhOJBm6w==&quot;</span>
-<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">      </span><span class="nt">&quot;cred_tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
-<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="nt">&quot;record_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;541ddbce5760497d98e68917be8c05bd&quot;</span>
-<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="p">}</span>
-</code></pre></div>
-
-</details>
-
-<h2 id="present-proof">Present Proof<a class="headerlink" href="#present-proof" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>⚠️ TODO: <a href="https://github.com/hyperledger/aries-cloudagent-python/pull/1125">https://github.com/hyperledger/aries-cloudagent-python/pull/1125</a></p>
-</blockquote>
-<h2 id="vc-api">VC-API<a class="headerlink" href="#vc-api" title="Permanent link">&para;</a></h2>
-<p>In order to support these functions outside of the respective DIDComm protocols, a set of endpoints conforming to the <a href="https://w3c-ccg.github.io/vc-api">vc-api</a> specification are available. These endpoints should be used by a controller when building an identity platform.</p>
-<p>These endpoints include:</p>
-<ul>
-<li><code>GET /vc/credentials</code> -&gt; returns a list of all stored json-ld credentials</li>
-<li><code>GET /vc/credentials/{id}</code> -&gt; returns a json-ld credential based on it's ID</li>
-<li><code>POST /vc/credentials/issue</code> -&gt; signs a credential</li>
-<li><code>POST /vc/credentials/verify</code> -&gt; verifies a credential</li>
-<li><code>POST /vc/credentials/store</code> -&gt; stores an issued credential</li>
-<li><code>POST /vc/presentations/prove</code> -&gt; proves a presentation</li>
-<li><code>POST /vc/presentations/verify</code> -&gt; verifies a presentation</li>
-</ul>
-<p>To learn more about using these endpoints, please refer to the available <a href="../../demo/AriesPostmanDemo/#experimenting-with-the-vc-api-endpoints">postman collection</a>.</p>
-<h2 id="external-suite-provider">External Suite Provider<a class="headerlink" href="#external-suite-provider" title="Permanent link">&para;</a></h2>
-<p>It is possible to extend the signature suite support, including outsourcing signing JSON-LD Credentials to some other component (KMS, HSM, etc.), using the <a href="https://github.com/hyperledger/aries-cloudagent-python/blob/d3ee92b1b86aff076b52f31eaecea59c18005079/aries_cloudagent/vc/vc_ld/external_suite.py#L27"><code>ExternalSuiteProvider</code> interface</a>. This interface can be implemented and registered via plugin. The plugged in provider will be used by ACA-Py's LDP-VC subsystem to create a <code>LinkedDataProof</code> object, which is responsible for signing normalized credential values.</p>
-<p>This interface enables taking advantage of ACA-Py's JSON-LD processing to construct and format the credential while exposing a simple interface to a plugin to make it responsible for signatures. This can also be combined with plugged in DID Methods, <code>VerificationKeyStrategy</code>, and other pluggable components.</p>
-<p>See this example project here for more details on the interface and its usage: <a href="https://github.com/dbluhm/acapy-ld-signer">https://github.com/dbluhm/acapy-ld-signer</a></p>
 
 
 
@@ -2659,44 +2244,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../Endorser/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Automatically Endorsing Indy Transations">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Automatically Endorsing Indy Transations
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../SelectiveDisclosureJWTs/" class="md-footer__link md-footer__link--next" aria-label="Next: Using SD-JWTs">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Using SD-JWTs
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
